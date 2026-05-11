@@ -1,0 +1,239 @@
+/* GLOBAL RESET & BASE */ 
+
+{ 
+
+    Margin: 0; 
+
+    Padding: 0; 
+
+    Box-sizing: border-box; 
+
+} 
+
+Body { 
+
+    Font-family: ‘Poppins’, sans-serif; 
+
+    Background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); 
+
+    Color: #e0e0e0; 
+
+    Line-height: 1.6; 
+
+} 
+
+ 
+
+/* NAVBAR – Glassmorphism */ 
+
+.navbar { 
+
+    Display: flex; 
+
+    Justify-content: space-between; 
+
+    Align-items: center; 
+
+    Background: rgba(255, 255, 255, 0.05); 
+
+    Backdrop-filter: blur(10px); 
+
+    Padding: 1rem 2rem; 
+
+    Border-radius: 12px; 
+
+    Margin: 1rem; 
+
+} 
+
+.logo { 
+
+    Font-weight: 700; 
+
+    Color: #00ffe7; 
+
+    Text-shadow: 0 0 10px #00ffe7; 
+
+} 
+
+.nav-links { 
+
+    List-style: none; 
+
+    Display: flex; 
+
+    Gap: 1.5rem; 
+
+} 
+
+.nav-links a { 
+
+    Color: #fff; 
+
+    Text-decoration: none; 
+
+    Position: relative; 
+
+} 
+
+.nav-links a::after { 
+
+    Content: ‘’; 
+
+    Position: absolute; 
+
+    Width: 0%; 
+
+    Height: 2px; 
+
+    Bottom: -4px; 
+
+    Left: 0; 
+
+    Background: #00ffe7; 
+
+    Transition: width 0.3s ease; 
+
+} 
+
+.nav-links a:hover::after { 
+
+    Width: 100%; 
+
+} 
+
+ 
+
+/* HERO SECTION – Animated Gradient */ 
+
+.hero { 
+
+    Text-align: center; 
+
+    Padding: 6rem 2rem; 
+
+    Background: linear-gradient(270deg, #ff6ec4, #7873f5, #00ffe7); 
+
+    Background-size: 600% 600%; 
+
+    Animation: gradientShift 12s ease infinite; 
+
+    Color: #fff; 
+
+    Border-radius: 12px; 
+
+    Margin: 1rem; 
+
+} 
+
+@keyframes gradientShift { 
+
+    0% { background-position: 0% 50%; } 
+
+    50% { background-position: 100% 50%; } 
+
+    100% { background-position: 0% 50%; } 
+
+} 
+
+.hero h2 { 
+
+    Font-size: 3rem; 
+
+    Margin-bottom: 1rem; 
+
+    Text-shadow: 0 0 15px rgba(0,0,0,0.5); 
+
+} 
+
+.hero p { 
+
+    Font-size: 1.2rem; 
+
+    Max-width: 600px; 
+
+    Margin: auto; 
+
+} 
+
+ 
+
+/* CARDS – Neon Glow */ 
+
+.card { 
+
+    Background: rgba(255, 255, 255, 0.05); 
+
+    Border-radius: 12px; 
+
+    Padding: 2rem; 
+
+    Margin: 1rem; 
+
+    Transition: transform 0.3s ease, box-shadow 0.3s ease; 
+
+} 
+
+.card:hover { 
+
+    Transform: translateY(-10px); 
+
+    Box-shadow: 0 0 20px #00ffe7;
+
+} 
+
+ 
+
+/* BUTTONS – Futuristic Glow */ 
+
+.btn { 
+
+    Display: inline-block; 
+
+    Background: #00ffe7; 
+
+    Color: #111; 
+
+    Padding: 0.8rem 1.5rem; 
+
+    Border-radius: 30px; 
+
+    Text-decoration: none; 
+
+    Font-weight: 600; 
+
+    Transition: all 0.3s ease; 
+
+} 
+
+.btn:hover { 
+
+    Background: #ff6ec4; 
+
+    Color: #fff; 
+
+    Box-shadow: 0 0 15px #ff6ec4; 
+
+} 
+
+ 
+
+/* FOOTER */ 
+
+Footer { 
+
+    Text-align: center; 
+
+    Padding: 2rem; 
+
+    Background: rgba(255, 255, 255, 0.05); 
+
+    Backdrop-filter: blur(10px); 
+
+    Border-radius: 12px; 
+
+    Margin: 1rem; 
+
+    Font-size: 0.9rem; 
+
+} 
