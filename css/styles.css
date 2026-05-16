@@ -1,104 +1,114 @@
 /* GLOBAL RESET & BASE */ 
 
-*{ 
+* { 
 
-    Margin: 0; 
+    margin: 0; 
 
-    Padding: 0; 
+    padding: 0; 
 
-    Box-sizing: border-box; 
-
-} 
-
-Body { 
-
-    Font-family: ‘Poppins’, sans-serif; 
-
-    Background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); 
-
-    Color: #e0e0e0; 
-
-    Line-height: 1.6; 
+    box-sizing: border-box; 
 
 } 
 
  
 
-/* NAVBAR – Glassmorphism */ 
+body { 
+
+    font-family: 'Poppins', sans-serif; 
+
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); 
+
+    color: #e0e0e0; 
+
+    line-height: 1.6; 
+
+} 
+
+ 
+
+/* NAVBAR - Glassmorphism */ 
 
 .navbar { 
 
-    Display: flex; 
+    display: flex; 
 
-    Justify-content: space-between; 
+    justify-content: space-between; 
 
-    Align-items: center; 
+    align-items: center; 
 
-    Background: rgba(255, 255, 255, 0.05); 
+    background: rgba(255, 255, 255, 0.1); 
 
-    Backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px); 
 
-    Padding: 1rem 2rem; 
+    padding: 1rem 2rem; 
 
-    Border-radius: 12px; 
+    border-radius: 5px; 
 
-    Margin: 1rem; 
+    margin: 5px; 
+
+} 
+
+ 
+
+.nav-logo { 
+
+    max-width: 50px;   /* default small logo for navbar */ 
+
+    height: auto; 
 
 } 
 
-.logo { 
-
-    Font-weight: 700; 
-
-    Color: #00ffe7; 
-
-    Text-shadow: 0 0 10px #00ffe7; 
-
-} 
+ 
 
 .nav-links { 
 
-    List-style: none; 
+    list-style: none; 
 
-    Display: flex; 
+    display: flex; 
 
-    Gap: 1.5rem; 
+    gap: 1.5rem; 
 
 } 
+
+ 
 
 .nav-links a { 
 
-    Color: #fff; 
+    color: #fff; 
 
-    Text-decoration: none; 
+    text-decoration: none; 
 
-    Position: relative; 
+    position: relative; 
 
 } 
+
+ 
 
 .nav-links a::after { 
 
-    Content: ‘’; 
+    content: ''; 
 
-    Position: absolute; 
+    position: absolute; 
 
-    Width: 0%; 
+    width: 0%; 
 
-    Height: 2px; 
+    height: 2px; 
 
-    Bottom: -4px; 
+    bottom: -4px; 
 
-    Left: 0; 
+    left: 0; 
 
-    Background: #00ffe7; 
+    background: #00ffe7; 
 
-    Transition: width 0.3s ease; 
+    transition: width 0.3s ease; 
 
 } 
 
+ 
+
 .nav-links a:hover::after { 
 
-    Width: 100%; 
+    width: 100%; 
 
 } 
 
@@ -108,98 +118,129 @@ Body {
 
 .hero { 
 
-    Text-align: center; 
+    text-align: center; 
 
-    Padding: 6rem 2rem; 
+    padding: 20px 10px; 
 
-    Background: #0094ff; /*bright blue background*/
+    background: #0094ff; /* bright blue background */ 
 
-    Color: #ffffff; /*white text*/
+    color: #ffffff;      /* white text */ 
 
-    Border-radius: 12px; 
+    border-radius: 5px; 
 
-    Margin: 1rem; 
+    margin: 1rem; 
 
-}
+} 
+
+ 
+
+.hero-logo { 
+
+    max-width: 250px;  /* default hero logo size */ 
+
+    height: auto; 
+
+} 
+
+ 
+
+@media (max-width: 768px) { 
+
+    .hero-logo { 
+
+        max-width: 150px;  /* smaller hero logo on mobile */ 
+
+    } 
+
+} 
+
+ 
 
 .hero h2 { 
 
-    Font-size: 3rem; 
+    font-size: 3rem; 
 
-    Margin-bottom: 1rem; 
+    margin-bottom: 1rem; 
 
-    Text-shadow: 0 0 10px rgba(0,0,0,0.5); 
+    text-shadow: 0 0 10px rgba(0,0,0,0.5); 
 
 } 
+
+ 
 
 .hero p { 
 
-    Font-size: 1.2rem; 
+    font-size: 1.2rem; 
 
-    Max-width: 600px; 
+    max-width: 600px; 
 
-    Margin: auto; 
-
-} 
-
- 
-
-/* CARDS*/ 
-
-.card { 
-
-    Background: rgba(255, 255, 255, 0.05) ; 
-
-    Border-radius: 12px; 
-
-    Padding: 2rem; 
-
-    Margin: 1rem; 
-
-    Transition: transform 0.3s ease, box-shadow 0.3s ease; 
-
-    Color: #FFFFFF; /*white text inside cards*/
-} 
-
-.card:hover { 
-
-    Transform: translateY(-10px); 
-
-    Box-shadow: 0 0 50px #0094ff;
+    margin: auto; 
 
 } 
 
  
 
-/* BUTTONS – Futuristic Glow */ 
+/* BUTTONS - Futuristic Glow */ 
 
 .btn { 
 
-    Display: inline-block; 
+    display: inline-block; 
 
-    Background: #00ffe7; 
+    background: #08ffe7; 
 
-    Color: #111; 
+    color: #111; 
 
-    Padding: 0.8rem 1.5rem; 
+    padding: 0.8rem 1.5rem; 
 
-    Border-radius: 30px; 
+    border-radius: 30px; 
 
-    Text-decoration: none; 
+    text-decoration: none; 
 
-    Font-weight: 600; 
+    font-weight: 600; 
 
-    Transition: all 0.3s ease; 
+    transition: all 0.3s ease; 
 
 } 
 
+ 
+
 .btn:hover { 
 
-    Background: #ff6ec4; 
+    background: #ff6ec4; 
 
-    Color: #fff; 
+    color: #fff; 
 
-    Box-shadow: 0 0 15px #ff6ec4; 
+    box-shadow: 0 0 15px #ff6ec4; 
+
+} 
+
+ 
+
+/* CARDS */ 
+
+.card { 
+
+    background: rgba(255, 255, 255, 0.05); 
+
+    border-radius: 12px; 
+
+    padding: 2rem; 
+
+    margin: 1rem; 
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+
+    color: #ffffff; /* white text inside cards */ 
+
+} 
+
+ 
+
+.card:hover { 
+
+    transform: translateY(-10px); 
+
+    box-shadow: 0 0 50px #0094ff; 
 
 } 
 
@@ -207,20 +248,30 @@ Body {
 
 /* FOOTER */ 
 
-Footer { 
+footer { 
 
-    Text-align: center; 
+    text-align: center; 
 
-    Padding: 2rem; 
+    padding: 2rem; 
 
-    Background: rgba(255, 255, 255, 0.05); 
+    background: rgba(255, 255, 255, 0.05); 
 
-    Backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px); 
 
-    Border-radius: 12px; 
+    border-radius: 12px; 
 
-    Margin: 1rem; 
+    margin: 1rem; 
 
-    Font-size: 0.9rem; 
+    font-size: 0.9rem; 
+
+} 
+
+ 
+
+.footer-logo { 
+
+    max-width: 70px;   /* default footer logo size */ 
+
+    height: auto; 
 
 } 
