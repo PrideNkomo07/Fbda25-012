@@ -144,7 +144,7 @@ Body {
 
  
 
-/* CARDS – Neon Glow */ 
+/* CARDS*/ 
 
 .card { 
 
@@ -165,7 +165,7 @@ Body {
 
     Transform: translateY(-10px); 
 
-    Box-shadow: 0 0 20px #00ffe7;
+    Box-shadow: 0 0 50px #00ffe7;
 
 } 
 
